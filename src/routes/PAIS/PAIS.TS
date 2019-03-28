@@ -4,6 +4,8 @@ import *  as  sql from 'mssql'
 
 const router = Router();
 //Hola
+
+//Ya hay hambre
 router.get('/PAIS',(req:Request, res:Response)=>{
      
     let stQuery:string = `
