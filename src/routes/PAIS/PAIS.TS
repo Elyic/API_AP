@@ -3,7 +3,7 @@ import SQLSERVER from '../../SQLSERVER/SQLSERVER';
 import *  as  sql from 'mssql'
 
 const router = Router();
-
+//Hola
 router.get('/PAIS',(req:Request, res:Response)=>{
      
     let stQuery:string = `
