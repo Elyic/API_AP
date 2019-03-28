@@ -4,17 +4,12 @@ import *  as  sql from 'mssql'
 
 const router = Router();
 
-router.get('/VENDEDORES',(req:Request, res:Response)=>{
-
-    let id_vendedor: number  = req.query['id_vendedor']
-    
-    
+router.get('/PAIS',(req:Request, res:Response)=>{
+     
     let stQuery:string = `
-    SELECT	nombre_vendedor, direccion FROM VENDEDOR
-    where id_vendedor = @id_vendedor
+    select * from PAIS
     `
     SQLSERVER.ejecutarQuery()
-             .input('id_vendedor',sql.Int,id_vendedor)
              .query(stQuery)
              .then((result)=>{
                 let   [rowsAffected] = result.rowsAffected

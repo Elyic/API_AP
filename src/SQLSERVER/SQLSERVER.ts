@@ -16,8 +16,7 @@ export default class SQLSERVER{
             user: 'sa',
             password: '123',
             server: 'localhost',
-            database: 'da2'
-          
+            database: 'Aplicacion',
         }      
         this.cnn = new sql.ConnectionPool(this.config);
         this.conectardb();
