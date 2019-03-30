@@ -32,9 +32,6 @@ router.get('/PAIS',(req:Request, res:Response)=>{
                     err: err                                                    
                 })//json
              })
-
-
-
 } )
 
 export default router
