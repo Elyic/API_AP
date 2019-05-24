@@ -57,12 +57,14 @@ router.get('/REGISTRO',(req:Request, res:Response)=>{
     let telefono: number = req.query['telefono']
     let email: String = req.query['email']
     let pass: String = req.query['pass']
+    let id_muni: number = req.query['id_muni']
     let fecha: String = req.query['fecha']
     
     
+    
     let stQuery:string = `
-    Insert into PERSONA(NOMBRE,APELLIDO,ESTADO_CIVIL,GENERO,DIRECCION,TELEFONO,EMAIL,CONTRASEÑA,FECHA_NAC) 
-    VALUES (@nombre, @apellido, @estado, @genero, @direccion, @telefono, @email, @pass, @fecha)
+    Insert into PERSONA(NOMBRE,APELLIDO,ESTADO_CIVIL,GENERO,DIRECCION,TELEFONO,EMAIL,CONTRASEÑA,ID_MUNI,FECHA_NAC) 
+    VALUES (@nombre, @apellido, @estado, @genero, @direccion, @telefono, @email, @pass, @id_muni, @fecha)
     `
     SQLSERVER.ejecutarQuery()
              .input('nombre',sql.NVarChar,nombre)
@@ -73,6 +75,7 @@ router.get('/REGISTRO',(req:Request, res:Response)=>{
              .input('telefono', sql.Int,telefono)
              .input('email', sql.NVarChar,email)
              .input('pass', sql.NVarChar,pass)
+             .input('id_muni', sql.Int,id_muni)
              .input('fecha', sql.NVarChar,fecha)
              .query(stQuery)
              .then((result)=>{
