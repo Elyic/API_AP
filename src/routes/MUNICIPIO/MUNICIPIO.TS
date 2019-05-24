@@ -3,12 +3,13 @@ import SQLSERVER from '../../SQLSERVER/SQLSERVER';
 import *  as  sql from 'mssql'
 
 const router = Router();
-router.get('/PAIS',(req:Request, res:Response)=>{
-     
+router.get('/MUNI',(req:Request, res:Response)=>{
+     let id_depto: number = req.query['id_depto']
     let stQuery:string = `
-    select ID_PAIS, NOMBRE_PAIS from pais
+    select ID_MUNI, NOMBRE_MUNI from MUNICIPIO WHERE ID_DEPTO=@id_depto
     `
     SQLSERVER.ejecutarQuery()
+            .input('id_depto',sql.Int,id_depto)
              .query(stQuery)
              .then((result)=>{
                 let   [rowsAffected] = result.rowsAffected
@@ -28,5 +29,4 @@ router.get('/PAIS',(req:Request, res:Response)=>{
                 })//json
              })
 } )
-
 export default router
