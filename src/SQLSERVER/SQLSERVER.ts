@@ -13,9 +13,12 @@ export default class SQLSERVER{
         
         console.log('Clase SQLSERVER inicializada')
         this.config= {
-            user: 'sa',
-            password: '123',
-            server: 'localhost',
+           // user: 'sa',
+            //password: '123',
+            //server: 'localhost',
+             user: 'elyic',
+            password: 'merilfstrike',
+            server: 'aplicacion.cocqfacvxj99.us-east-2.rds.amazonaws.com',
             database: 'Aplicacion',
         }      
         this.cnn = new sql.ConnectionPool(this.config);
