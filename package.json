@@ -12,14 +12,17 @@
   },
   "author": "Harold Cordon",
   "license": "ISC",
+  "private": true,
   "dependencies": {
     "@types/mssql": "^4.0.12",
     "copyfiles": "^2.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "fstream": "^1.0.12",
     "i": "^0.3.6",
     "mssql": "^5.0.0",
-    "npm": "^6.9.0"
+    "npm": "^6.9.0",
+    "tar": "^4.4.8"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",
@@ -28,5 +31,9 @@
   "engines": {
     "node": "10.15.3",
     "npm": "^6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elyic/API_AP.git"
   }
 }
