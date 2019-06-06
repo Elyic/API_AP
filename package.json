@@ -26,14 +26,13 @@
     "i": "^0.3.6",
     "mssql": "^5.0.0",
     "npm": "^6.9.0",
-    "tar": "^4.4.8",
-    "typescript": "^2.4.0"
+    "tar": "^4.4.8"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",
     "@types/express": "^4.16.1",
-    "typescript": "^2.4.0",
-    "shx": "^0.3.2"
+    "shx": "^0.3.2",
+    "typescript": "^2.9.2"
   },
   "engines": {
     "node": "10.15.3",
