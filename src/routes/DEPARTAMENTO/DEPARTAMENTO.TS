@@ -29,4 +29,8 @@ router.get('/DEPTO',(req:Request, res:Response)=>{
                 })//json
              })
 } )
-export default router
+
+
+export { 
+    router as routerDEPARTAMENTO
+}

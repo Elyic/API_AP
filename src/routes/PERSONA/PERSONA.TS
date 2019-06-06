@@ -198,4 +198,6 @@ router.get('/ID',(req:Request, res:Response)=>{
 
 } )
 
-export default router
+export { 
+    router as routerPERSONA
+}
