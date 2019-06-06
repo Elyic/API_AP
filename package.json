@@ -2,7 +2,7 @@
   "name": "noapirest",
   "version": "1.0.0",
   "description": "Servicio para noapirest",
-  "main": "dist/src/index.js",
+  "main": "Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "html": "copyfiles --up 1 src/public/*.html dist ",
@@ -26,5 +26,5 @@
   "engines": {
     "node": "10.15.3",
     "npm": "^6.9.0"
-    }
+  }
 }
