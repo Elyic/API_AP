@@ -137,4 +137,6 @@ router.get('/CATEGORIA',(req:Request, res:Response)=>{
                 })//json
              })
 } )
-export default router
+export { 
+    router as routerTRABAJO
+}

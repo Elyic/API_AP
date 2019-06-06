@@ -29,4 +29,7 @@ router.get('/MUNI',(req:Request, res:Response)=>{
                 })//json
              })
 } )
-export default router
+
+export { 
+    router as routerMUNICIPIO
+}
