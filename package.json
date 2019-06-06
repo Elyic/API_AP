@@ -4,12 +4,15 @@
   "description": "Servicio para noapirest",
   "main": "index.js",
   "scripts": {
+    "copyAll": "shx cp -r src/static build/static && shx cp -r src/views build/views && shx cp -r src/uploads build/uploads",
     "test": "echo \"Error: no test specified\" && exit 1",
     "html": "copyfiles --up 1 src/public/*.html dist ",
     "build": "tsc && npm run html",
     "start": "node dist/src/index.js",
     "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "tsc:w": "tsc -w",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
   },
   "author": "Harold Cordon",
   "license": "ISC",
@@ -23,11 +26,14 @@
     "i": "^0.3.6",
     "mssql": "^5.0.0",
     "npm": "^6.9.0",
-    "tar": "^4.4.8"
+    "tar": "^4.4.8",
+    "typescript": "^2.4.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.4",
-    "@types/express": "^4.16.1"
+    "@types/express": "^4.16.1",
+    "typescript": "^2.4.0",
+    "shx": "^0.3.2"
   },
   "engines": {
     "node": "10.15.3",
