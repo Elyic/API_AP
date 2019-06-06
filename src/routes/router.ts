@@ -11,12 +11,12 @@ import * as trabajo from './TRABAJO/TRABAJO';
 const app = express();
 //const express = require('express');
 
-app.use('/',router);
 app.use('/',pais.default);
 app.use('/',persona.default);
 app.use('/',categoria.default);
 app.use('/',departamento.default);
 app.use('/',municipio.default);
 app.use('/',trabajo.default);
+app.use('/',router);
 
 export default  app;
