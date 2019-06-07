@@ -9,7 +9,7 @@ import * as departamento from './DEPARTAMENTO/DEPARTAMENTO';
 import * as municipio  from './MUNICIPIO/MUNICIPIOS';
 import * as trabajo from './TRABAJO/TRABAJO';
 const app = express();
-//const express = require('express');
+const express = require('express');
 
 //app.use('/',pais.default);
 app.use('/',persona);
