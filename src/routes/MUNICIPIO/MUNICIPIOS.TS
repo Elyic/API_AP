@@ -1,8 +1,10 @@
 import { Router, Request, Response  } from "express";
 import SQLSERVER from '../../SQLSERVER/SQLSERVER';
 import *  as  sql from 'mssql'
+import express from 'express';
 
-const router = Router();
+//const router = Router();
+const router = express.Router();
 router.get('/MUNI',(req:Request, res:Response)=>{
      let id_depto: number = req.query['id_depto']
     let stQuery:string = `
