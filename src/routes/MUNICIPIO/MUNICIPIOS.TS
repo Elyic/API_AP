@@ -29,4 +29,4 @@ router.get('/MUNI',(req:Request, res:Response)=>{
                 })//json
              })
 } )
-module.exports.routes;
+export default router;

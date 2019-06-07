@@ -6,7 +6,7 @@ import router from './PAIS/PAIS';
 import {router as persona} from './PERSONA/PERSONA';
 import * as categoria from './CATEGORIA/CATEGORIA';
 import * as departamento from './DEPARTAMENTO/DEPARTAMENTO';
-import {router as municipio }  from './MUNICIPIO/MUNICIPIOS';
+import * as municipio   from './MUNICIPIO/MUNICIPIOS';
 import * as trabajo from './TRABAJO/TRABAJO';
 const app = express();
 //const express = require('express');
@@ -15,7 +15,7 @@ const app = express();
 app.use('/',persona);
 app.use('/',categoria.default);
 app.use('/',departamento.default);
-app.use('/',municipio);
+app.use('/',municipio.default);
 app.use('/',trabajo.default);
 app.use('/',router);
 
