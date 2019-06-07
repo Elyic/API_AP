@@ -2,7 +2,7 @@
 // export default router
 import { Server} from "../server/server";
 import * as pais from '../routes/PAIS/PAIS';
-import { routerPERSONA} from '../routes/PERSONA/PERSONA';
+import { routerPERSONA} from '../routes/persona/persona';
 import { routerDEPARTAMENTO} from '../routes/DEPARTAMENTO/DEPARTAMENTO';
 import { routerMUNICIPIO }  from '../routes/MUNICIPIO/MUNICIPIO';
 import { routerTRABAJO} from '../routes/TRABAJO/TRABAJO';
