@@ -11,10 +11,10 @@ import router from './CATEGORIA/CATEGORIA';
 const server = Server.instance
 //const express = require('express');
 
-server.app.use('/',pais.default);
-server.app.use('/',routerPERSONA);
+server.app.use('/PAIS',pais.default);
+server.app.use('/PERSONA',routerPERSONA);
 //server.app.use('/',categoria.default);
-server.app.use('/',routerDEPARTAMENTO);
-server.app.use('/',routerMUNICIPIO);
-server.app.use('/',routerTRABAJO);
+server.app.use('/DEPARTAMENTO',routerDEPARTAMENTO);
+server.app.use('/MUNICIPIO',routerMUNICIPIO);
+server.app.use('/TRABAJO',routerTRABAJO);
 server.app.use('/',router);
