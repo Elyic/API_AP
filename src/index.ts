@@ -1,4 +1,4 @@
-import Server from "./server/server";
+import {Server} from "./server/server";
 import SQLSERVER from './SQLSERVER/SQLSERVER';
 import { SERVER_PORT } from '../global/environment';
 import cors  from "cors";

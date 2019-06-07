@@ -1,6 +1,6 @@
 
 // export default router
-import {Server} from "../server/server";
+import { Server} from "../server/server";
 import * as pais from './PAIS/PAIS';
 import { routerPERSONA} from './PERSONA/PERSONA';
 import { routerDEPARTAMENTO} from './DEPARTAMENTO/DEPARTAMENTO';

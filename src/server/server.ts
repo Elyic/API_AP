@@ -2,7 +2,7 @@ import  express  from "express";
 import path from "path";
 import { SERVER_PORT } from "../../global/environment";
 
-export default class Server{
+export class Server{
 
         /*Definición de las variables */
         public app: express.Application;
