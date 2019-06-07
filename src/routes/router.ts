@@ -7,8 +7,8 @@ import {router as persona} from './PERSONA/PERSONA';
 import * as categoria from './CATEGORIA/CATEGORIA';
 import * as departamento from './DEPARTAMENTO/DEPARTAMENTO';
 import * as trabajo from './TRABAJO/TRABAJO';
-//const app = express();
-const express = require('express');
+const app = express();
+//const express = require('express');
 
 //app.use('/',pais.default);
 app.use('/',persona);
