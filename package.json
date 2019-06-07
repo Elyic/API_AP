@@ -4,9 +4,7 @@
   "description": "Servicio para noapirest",
   "main": "dist/src/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "tsc",
-    "start": "node dist/src/index"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Harold Cordon",
   "license": "ISC",
