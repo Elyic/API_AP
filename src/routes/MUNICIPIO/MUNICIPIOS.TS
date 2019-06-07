@@ -1,7 +1,6 @@
 import { Router, Request, Response  } from "express";
 import SQLSERVER from '../../SQLSERVER/SQLSERVER';
 import *  as  sql from 'mssql'
-import express from 'express';
 
 const router = Router();
 //const router = express.Router();
