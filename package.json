@@ -4,10 +4,8 @@
   "description": "Servicio para noapirest",
   "main": "dist/src/index",
   "scripts": {
-    "copyAll": "shx cp -r src/static build/static && shx cp -r src/views build/views && shx cp -r src/uploads build/uploads",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "copyfiles --up 1 src/public/*.html dist ",
-    "build": "tsc && npm run html",
+    "postinstall": "tsc",
     "start": "node dist/src/index"
   },
   "author": "Harold Cordon",
