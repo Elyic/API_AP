@@ -18,7 +18,7 @@ export default class SQLSERVER{
             //server: 'localhost',
              user: 'elyic',
             password: 'merilfstrike',
-            server: 'aplicacion.cocqfacvxj99.us-east-2.rds.amazonaws.com',
+            server: 'aplicacion.cocqfacvxj99.us-east-2.rds.amazonaws.com,1433',
             database: 'Aplicacion',
         }      
         this.cnn = new sql.ConnectionPool(this.config);
