@@ -20,7 +20,7 @@
     "fstream": "^1.0.12",
     "i": "^0.3.6",
     "mssql": "^5.0.0",
-    "npm": "^6.9.0",
+    "npm": "^6.4.1",
     "tar": "^4.4.8"
   },
   "devDependencies": {
@@ -31,8 +31,8 @@
     "typescript": "^2.9.2"
   },
   "engines": {
-    "node": "10.15.3",
-    "npm": "^6.9.0"
+    "node": "10.13.0",
+    "npm": "^6.4.1"
   },
   "repository": {
     "type": "git",
