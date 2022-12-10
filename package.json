@@ -12,7 +12,7 @@
   "dependencies": {
     "copyfiles": "^2.1.0",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "fstream": "^1.0.12",
     "i": "^0.3.6",
     "mssql": "^5.0.0",
